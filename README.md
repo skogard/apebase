@@ -2,12 +2,12 @@
 
 > Bored Ape Database
 
-![apebase](public/apebase.png)
+![apebase](apebase.png)
 
 Apebase is the entire 10,000 Bored Ape Yacht Club NFT Universe stored in a single Git repository. It's made up of:
 
-1. **DB:** The entire metadata database stored in a [6MB file](public/apebase/db)
-2. **IPFS:** All IPFS files stored under [ipfs folder](public/apebase/ipfs) without having to run your own IPFS node!
+1. **DB:** The entire metadata database stored in a [6MB file](db)
+2. **IPFS:** All IPFS files stored under [ipfs folder](ipfs) without having to run your own IPFS node!
 
 [Try Demo](https://ape.offbase.org)
 
@@ -34,8 +34,8 @@ With Apebase, you can simply download the entire NFT universe through a single `
 
 # How it works
 
-1. **DB:** The entire database is stored as a single immutable file at [db](public/apebase/db). This file was constructed by crawling the Ethereum blockchain once (You only need to do it once, since NFT metadata are immutable!)
-2. **IPFS:** All IPFS files are stored under the IPFS CID name WITHOUT having to run an IPFS node. It's all in this Git repository under [public/apebase/ipfs](public/apebase/ipfs) folder.
+1. **DB:** The entire database is stored as a single immutable file at [db](db). This file was constructed by crawling the Ethereum blockchain once (You only need to do it once, since NFT metadata are immutable!)
+2. **IPFS:** All IPFS files are stored under the IPFS CID name WITHOUT having to run an IPFS node. It's all in this Git repository under [ipfs](ipfs) folder.
 
 ## 1. DB
 
@@ -95,7 +95,7 @@ Best of all, all this is 100% **verifiable** and **immutable**, so you can feel 
 
 Apebase also lets you access all IPFS files WITHOUT running an IPFS node!
 
-Simply clone this git repository and it contains all 10,000 IPFS files for the Bored Ape Universe! (See [public/apebase/ipfs](public/apebase/ipfs))
+Simply clone this git repository and it contains all 10,000 IPFS files for the Bored Ape Universe! (See [ipfs](ipfs))
 
 ---
 
@@ -120,7 +120,7 @@ Finally, open the explorer at: http://localhost:3010
 
 You will see the following screen:
 
-![apequery](public/apequery.png)
+![apequery](apequery.png)
 
 You can also try the online demo here: https://ape.offbase.org
 
@@ -143,8 +143,8 @@ The DB is stored as [NeDB](https://github.com/louischatriot/nedb), a file based 
 
 Once you've downloaded the repository, you will find the following:
 
-1. DB: At [public/apebase/db](public/apebase/db)
-2. IPFS FILES: Under [public/apebase/ipfs](public/apebase/ipfs)
+1. DB: At [db](db)
+2. IPFS FILES: Under [ipfs](ipfs)
 
 To query the DB, use the [NeDB](https://github.com/louischatriot/nedb) library. First install the `nedb` module:
 
