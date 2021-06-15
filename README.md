@@ -103,10 +103,10 @@ Simply clone this git repository and it contains all 10,000 IPFS files for the B
 
 This repository contains the entire Apebase query engine web app at [https://ape.offbase.org](https://ape.offbase.org). Let's try it out.
 
-First, clone the repository:
+First, clone the repository for the ape query app (at https://github.com/skogard/apequery):
 
 ```
-git clone https://github.com/skogard/ape.git
+git clone https://github.com/skogard/apequery.git
 ```
 
 Next, install and start the server:
@@ -158,7 +158,7 @@ And then just use it!
 const Datastore = require('nedb')
 const db = new Datastore({ filename: './db', autoload: true });
 const query = {
-  "attributes": {
+  "metadata.attributes": {
     "$elemMatch": {
       "trait_type": "Clothes",
       "value": "Striped Tee"
