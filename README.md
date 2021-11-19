@@ -134,7 +134,7 @@ You can also try the online demo here: https://ape.offbase.org
 Simply clone this repository to get started!
 
 ```
-git clone https://github.com/skogard/apedb.git
+git clone https://github.com/skogard/apebase.git
 ```
 
 ## 2. Use
@@ -176,6 +176,6 @@ db.find(query, (err, docs) => {
 
 Interested in seeing this for other NFTs?
 
-I'm thinking of open sourcing the engine that created the ApeDB if enough people are interested. Let me know!
+I'm thinking of open sourcing the engine that created the Apebase if enough people are interested. Let me know!
 
 You can find me at [@skogard](https://twitter.com/skogard)
